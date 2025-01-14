@@ -33,7 +33,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center space-x-4">
                         <FiMenu className="text-2xl cursor-pointer" onClick={() => setSidebarOpen(!sidebarOpen)} />
-                        {scrolled ? <LogoAy2 className="h-36 w-auto" /> : <LogoAy1 className="h-36 w-auto" />}
+                        {scrolled ? <LogoAy2 className="h-8 w-auto" /> : <LogoAy1 className="h-36 w-auto" />}
                     </div>
                     <div className={`hidden md:flex items-center space-x-8 ${scrolled ? 'text-green-500' : 'text-white'}`}>
                         <a href="#about" className={`hover:text-green-500 ${scrolled ? 'text-green-500' : 'text-white'}`}>About</a>
