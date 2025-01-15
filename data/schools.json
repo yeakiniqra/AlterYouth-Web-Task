@@ -14,7 +14,7 @@
   {
     "name": "Kanchan Government Primary School",
     "location": "Kanchan",
-    "school_img_id": 1,
+    "school_img_id": 2,
     "ht_img_id": 2,
     "ht_name": "Shilpi Begum",
     "ht_quote": "Be a wonderful role model because you will be the window through which many children will see their future",
@@ -26,7 +26,7 @@
   {
     "name": "Daudpur Government Primary School",
     "location": "Daudpur",
-    "school_img_id": 1,
+    "school_img_id": 3,
     "ht_img_id": 3,
     "ht_name": "Nusrat Parvin",
     "ht_quote": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
@@ -38,7 +38,7 @@
   {
     "name": "Kendua Government Primary School",
     "location": "Golakandail",
-    "school_img_id": 1,
+    "school_img_id": 4,
     "ht_img_id": 4,
     "ht_name": "Ataur Alam",
     "ht_quote": "Education is the best weapon you can use to change the world",
@@ -50,7 +50,7 @@
   {
     "name": "Bhulta Government Primary School",
     "location": "Bhulta",
-    "school_img_id": 1,
+    "school_img_id": 5,
     "ht_img_id": 5,
     "ht_name": "Tanjiba Jerin",
     "ht_quote": "The pen is mightier than the sword",
@@ -62,7 +62,7 @@
   {
     "name": "Deboi Government Primary School",
     "location": "Rupganj",
-    "school_img_id": 1,
+    "school_img_id": 6,
     "ht_img_id": 6,
     "ht_name": "Dipa Das",
     "ht_quote": "A teacher's influnce never stops, it goes on till the day you die",
@@ -74,7 +74,7 @@
   {
     "name": "Birabo Government Primary School",
     "location": "Bholabo",
-    "school_img_id": 1,
+    "school_img_id": 7,
     "ht_img_id": 7,
     "ht_name": "Pori Bhanu Akhter",
     "ht_quote": "A good education can change anyone. A good teacher can change everything.",

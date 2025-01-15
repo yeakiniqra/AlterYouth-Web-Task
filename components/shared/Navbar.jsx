@@ -30,17 +30,32 @@ const Navbar = () => {
     return (
         <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm' : 'bg-transparent'}`}>
             <div className="max-w-7xl mx-auto px-4">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex justify-between items-center h-16 md:h-20">
                     <div className="flex items-center space-x-4">
-                        <FiMenu className="text-2xl cursor-pointer" onClick={() => setSidebarOpen(!sidebarOpen)} />
-                        {scrolled ? <LogoAy2 className="h-8 w-auto" /> : <LogoAy1 className="h-36 w-auto" />}
+                        <FiMenu 
+                            className="text-2xl cursor-pointer text-green-500" 
+                            onClick={() => setSidebarOpen(!sidebarOpen)} 
+                        />
+                        {scrolled ? (
+                            <LogoAy2 className="h-12 w-auto" />
+                        ) : (
+                            <LogoAy1 className="h-36 w-auto text-emerald-500" />
+                        )}
                     </div>
-                    <div className={`hidden md:flex items-center space-x-8 ${scrolled ? 'text-green-500' : 'text-white'}`}>
-                        <a href="#about" className={`hover:text-green-500 ${scrolled ? 'text-green-500' : 'text-white'}`}>About</a>
-                        <a href="#how-it-works" className={`hover:text-green-500 ${scrolled ? 'text-green-500' : 'text-white'}`}>How it works</a>
-                        <a href="#scholarships" className={`hover:text-green-500 ${scrolled ? 'text-green-500' : 'text-white'}`}>Scholarships</a>
-                        <a href="#collaborate" className={`hover:text-green-500 ${scrolled ? 'text-green-500' : 'text-white'}`}>Collaborate</a>
-                        <button className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
+                    <div className={`hidden md:flex items-center space-x-8 ${scrolled ? 'text-green-600' : 'text-white'}`}>
+                        {['About', 'How it works', 'Scholarships', 'Collaborate'].map((item, index) => (
+                            <a 
+                                key={index} 
+                                href={`#${item.toLowerCase().replace(' ', '-')}`} 
+                                className="relative group"
+                            >
+                                <span className={`hover:text-green-500 font-semibold ${scrolled ? 'text-green-500' : 'text-white'}`}>
+                                    {item}
+                                </span>
+                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        ))}
+                        <button className="text-green-500 px-4 py-2 rounded-md border border-green-500 hover:bg-green-500 hover:text-white transition-all duration-300">
                             Login
                         </button>
                     </div>
